@@ -70,12 +70,12 @@ $ zip example.zip main.js
 
 create the s3; make sure you use a globally unique bucket name
 ```bash
-aws s3api create-bucket --bucket=terraform-serverless-jrdevops-holly --region=ap-southeast-2 --create-bucket-configuration LocationConstraint=ap-southeast-2
+aws s3api create-bucket --bucket=terraform-serverless-jrdevops-roger --region=ap-southeast-2 --create-bucket-configuration LocationConstraint=ap-southeast-2
 ```
 
 upload the lambda function to s3
 ```bash
-aws s3 cp example.zip s3://terraform-serverless-jrdevops-holly/v1.0.0/example.zip
+aws s3 cp example.zip s3://terraform-serverless-jrdevops-roger/v1.0.0/example.zip
 ```
 Note: we hardcode the version as V1.0.0. Later we will expose it as a variable.
 
